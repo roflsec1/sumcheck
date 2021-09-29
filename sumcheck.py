@@ -31,7 +31,7 @@ m = 8
 data = input("Enter data whose size is a multiple of {}: ".format(m))
 
 while len(data)%m!=0 and len(data)<=m: #sender
-	data = input("INVALID! Please enter data whose size is a multiple of 2: ")
+	data = input("INVALID! Please enter data whose size is a multiple of 8: ")
 
 k = len(data)//m
 data_list = [data[i:i+m] for i in range(0, len(data), m)]
