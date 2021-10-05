@@ -61,7 +61,7 @@ checksum = ''.join(checksum)
 print("Checksum: " + checksum[2:])
 
 #Receiver
-sum_ = bin(int(_sum, 2) + int(checksum, 2))[2:]
+sum_ = bin(int(_sum, 2) + int(checksum, 2))[2:]#introduce error here
 complement = ['0', 'b'] 
 for i in range(len(sum_)): #complement
 	if sum_[i] == "1":
